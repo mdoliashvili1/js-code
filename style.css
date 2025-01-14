@@ -1,0 +1,239 @@
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.top-nav {
+  display: flex;
+  background-color: #032233; 
+  color: white;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 2px solid #032233;
+}
+
+.nav-item {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0 15px;
+  position: relative;
+}
+
+.nav-item:not(:last-child) {
+  border-right: 1px solid white;
+}
+
+.nav-item:hover {
+  background-color: #004080;
+  color: #ffffff;
+  padding: 5px;
+}
+
+
+.search-bar-section {
+  background-color: #0e2938; 
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 20px;
+}
+
+.left-image {
+  width: 100%; 
+  max-width: 300px;
+  height: auto;
+  margin: left 70px; 
+  margin-right: auto; 
+}
+
+
+
+
+
+
+.search-bar {
+  width: 100%; 
+  max-width: 200px; 
+  padding: 5px 10px; 
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 0; 
+}
+
+
+.search-btn img {
+  height: 20px;
+}
+
+
+.sub-nav {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+}
+
+.sub-nav-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap; 
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.sub-nav-item:nth-child(1):hover { background-color: #20c997; color: #f8f4f4; }
+.sub-nav-item:nth-child(2):hover { background-color: #0dcaf0; color: #000; }
+.sub-nav-item:nth-child(3):hover { background-color: #ffc107; color: #000; }
+.sub-nav-item:nth-child(4):hover { background-color: #198754; color: #000; }
+.sub-nav-item:nth-child(5):hover { background-color: #2e0da5; color: #000; }
+.sub-nav-item:nth-child(6):hover { background-color: #6f42c1; color: #000; }
+.sub-nav-item:nth-child(7):hover { background-color: #980c36; color: #000; }
+.sub-nav-item:nth-child(8):hover { background-color: #a86f05; color: #000; }
+.sub-nav-item:nth-child(9):hover { background-color: #3da6c9; color: #000; }
+.sub-nav-item:nth-child(10):hover { background-color: #b3e5fc; color: #000; }
+
+
+.navbar {
+  background-color: #fdfeff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.navbar a {
+  color: rgb(12, 60, 70);
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 5px; 
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #005F82;
+}
+
+
+.news-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.news-container {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.news-item {
+  flex: 0 0 300px;
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #032233;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.left-arrow { left: 20px; }
+.right-arrow { right: 20px; }
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.language-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.language-btn {
+  background-color: #0d131d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.language-btn:hover {
+  background-color: #16375d;
+}
+
+.language-btn:active {
+  background-color: #0e2a3a;
+}
+
+
+@media (max-width: 768px) {
+  .top-nav, .sub-nav, .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item, .sub-nav-item, .navbar a {
+    margin: 5px 0;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-item {
+    flex: 0 0 90%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-item, .sub-nav-item, .navbar a {
+    font-size: 12px;
+  }
+
+  .search-bar {
+    width: 90%; 
+  }
+
+  .arrow {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
+

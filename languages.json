@@ -1,0 +1,33 @@
+{
+    "ka": {
+      "topNav": ["პარტნიორები", "ახალი ამბები", "ქალი", "ჯანმრთელობა", "სპორტი", "ავტო", "ბიზნესი", "მშობლები", "ყველა საიტი", "ცხოველები", "განცხადებები", "რეკლამა"],
+      "searchPlaceholder": "ძიება...",
+      "subNav": ["საზოგადოება", "ეკონომიკა", "მსოფლიო", "განათლება", "HI-Tech", "კულტურა", "მოგზაურობა", "საინტერესო", "პოლიტიკა", "ქვიზები"],
+      "Navbar": ["მთავარი", "ძირითადი ინფორმაცია", "კონტაქტი", "ავტორიზაცია", "რეგისტრაცია", "გალერეა", "feedback"],
+      "news": [
+        "რა შანსს კარგავს საქართველო აშშ-სა და ევრკავშირთან ურთიერთობის გაფუჭებით?",
+        "თბილისის რომელ უბნებში ღირს ბინა ყველაზე იაფი/ძვირი?",
+        "ქვეყანაში რჩება მხოლოდ ის ფული, რაც დაიხარჯა ჭამაში, სუვენირში - დანარჩენი თანხა გადის“ - რა გამოწვევები აქვთ გიდებს",
+        "როდის აშენდება „რიკოთის“ ქარის ელექტროსადგური? - ინვესტიციის მოცულობა 37.85 მლნ აშშ დოლარია",
+        "ვინ შეიძლება შეცვალოს ბაიდენი? - \"დემოკრატების პანიკამ და დაბნეულობამ კითხვები გააჩინა საპრეზიდენტო კანდიდატთან დაკავშირებით."
+      ]
+
+
+    },
+    "en": {
+      "topNav": ["Partners", "News", "Women", "Health", "Sports", "Auto", "Business", "Parents", "All Sites", "Animals", "Announcements", "Advertising"],
+      "searchPlaceholder": "Search...",
+      "subNav": ["Society", "Economy", "World", "Education", "HI-Tech", "Culture", "Travel", "Interesting", "Politics", "Quizzes"],
+      "navbar": ["Home", "Main Information", "Contact", "Authorization", "Registration", "Gallery", "Feedback"],
+      "news": [
+        "What chance is Georgia losing by straining relations with the US and the EU?",
+        "Which districts in Tbilisi are the cheapest/most expensive for buying apartments?",
+        "The only money remaining in the country is spent on food and souvenirs - the rest is leaving: What challenges do guides face?",
+        "When will the 'Rikoti' wind power station be built? - The investment amounts to $37.85 million USD.",
+        "Who might replace Biden? - 'Democrats' panic and confusion have raised questions about the presidential candidate."
+      ]
+    }
+
+
+
+  }

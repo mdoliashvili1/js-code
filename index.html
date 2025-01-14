@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <body>
+    
+   
+    <div class="top-nav">
+      <div class="nav-item">პარტნიორები</div>
+      <div class="nav-item">ახალი ამბები</div>
+      <div class="nav-item">ქალი</div>
+      <div class="nav-item">ჯანმრთელობა</div>
+      <div class="nav-item">სპორტი</div>
+      <div class="nav-item">ავტო</div>
+      <div class="nav-item">ბიზნესი</div>
+      <div class="nav-item">მშობლები</div>
+      <div class="nav-item">ყველა საიტი</div>
+      <div class="nav-item">ცხოველები</div>
+      <div class="nav-item">განცხადებები</div>
+  
+      <div class="nav-item">რეკლამა</div>
+    </div>
+
+    
+    <div class="search-bar-section">
+      <div class="search-container">
+        <img src="https://www.allnews.ge/static/img/logo.png" alt="Image" class="left-image">
+        <div> <img src="age4.png" alt="Small Image" class="small-image">
+        </div>
+        <input type="text" placeholder="ძიება..." class="search-bar">
+        <button class="search-btn"></button>
+
+
+      </div>
+      <div class="sub-nav">
+        <div class="sub-nav-item">საზოგადოება &#9660;</div>
+        <div class="sub-nav-item">ეკონომიკა &#9660;</div>
+        <div class="sub-nav-item">მსოფლიო &#9660;</div>
+        <div class="sub-nav-item">განათლება &#9660;</div>
+        <div class="sub-nav-item">HI-Tech &#9660;</div>
+        <div class="sub-nav-item">კულტურა &#9660;</div>
+        <div class="sub-nav-item">მოგზაურობა &#9660;</div>
+        <div class="sub-nav-item">საინტერესო &#9660;</div>
+        <div class="sub-nav-item">პოლიტიკა &#9660;</div>
+        <div class="sub-nav-item">ქვიზები &#9660;</div>
+      </div>
+    </div>
+
+    
+    <nav class="navbar">
+        <a href="./main.html">მთავარი</a>
+        <a href="./maininfo.html">ძირითადი ინფორმაცია</a>
+        <a href="./contact.html">კონტაქტი</a>
+        <a href="./autorisation.html">ავტორიზაცია</a>
+        <a href="./registration.html">რეგისტრაცია</a>
+        <a href="./gallery.html">გალერეა</a>
+        <a href="./feedback.html">ფიდბექი</a>
+    </nav>
+
+    <div class="news-carousel">
+      <button class="arrow left-arrow">&#10094;</button> 
+      <div class="news-container">
+        <div class="news-item">
+          <img src="https://www.allnews.ge/media/_thumb/uploads/2024/06-20/georgias-1718889107.png" alt="first News">
+          <p>რა შანსს კარგავს საქართველო აშშ-სა და ევრკავშირთან ურთიერთობის გაფუჭებით?</p>
+        </div>
+        <div class="news-item">
+          <img src="https://www.allnews.ge/media/_thumb/uploads/2024/07-05/tbilisi-bpn-1719135623-1720154908.jpg" alt="second News">
+          <p>თბილისის რომელ უბნებში ღირს ბინა ყველაზე იაფი/ძვირი?</p>
+        </div>
+        <div class="news-item">
+          <img src="https://www.allnews.ge/media/_thumb/uploads/2024/07-03/644fcee993cca-w-h-1719991769.jpeg" alt="third News">
+          <p>ქვეყანაში რჩება მხოლოდ ის ფული, რაც დაიხარჯა ჭამაში, სუვენირში - დანარჩენი თანხა გადის“ - რა გამოწვევები აქვთ გიდებს</p>
+        </div>
+        <div class="news-item">
+          <img src="https://www.allnews.ge/media/_thumb/uploads/2024/06-19/7d730aab-0f41-4c2a-8b9c-743150e1b3d7-1718790430-1718798113.jpg" alt="fourth News">
+          <p>როდის აშენდება „რიკოთის“ ქარის ელექტროსადგური? - ინვესტიციის მოცულობა 37.85 მლნ აშშ დოლარია</p>
+        </div>
+        <div class="news-item">
+          <img src="https://www.allnews.ge/media/_thumb/uploads/2024/07-04/129962309-gettyimages-1258358301-1720076436.jpg" alt="fifth News">
+          <p>ვინ შეიძლება შეცვალოს ბაიდენი? - "დემოკრატების პანიკამ და დაბნეულობამ კითხვები გააჩინა საპრეზიდენტო კანდიდატთან დაკავშირებით.</p>
+        </div>
+      </div>
+      <button class="arrow right-arrow">&#10095;</button> 
+    </div>
+
+    <div class="language-buttons">
+      <button class="language-btn" onclick="changeLanguage('ka')">ქართული</button>
+      <button class="language-btn" onclick="changeLanguage('en')">English</button>
+    </div>
+<script src="script.js"></script>
+
+
+
+<style>
+    .star {
+      font-size: 40px;
+      color: gray;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+    .star.selected {
+      color: gold;
+    }
+  </style>
+</head>
+<body>
+  <h1>შეაფასეთ:</h1>
+  <div id="rating-container">
+    <span class="star" data-value="1">&#9733;</span>
+    <span class="star" data-value="2">&#9733;</span>
+    <span class="star" data-value="3">&#9733;</span>
+    <span class="star" data-value="4">&#9733;</span>
+    <span class="star" data-value="5">&#9733;</span>
+  </div>
+  <p id="rating-value">თქვენი შეფასება: <span id="rating-text">0</span></p>
+
+  <script>
+    const stars = document.querySelectorAll('.star');
+    const ratingText = document.getElementById('rating-text');
+    const cookieName = 'ratingValue';
+
+    
+    function setCookie(name, value, days) {
+      const date = new Date();
+      date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+      document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
+    }
+
+    
+    function getCookie(name) {
+      const cookies = document.cookie.split('; ');
+      for (let cookie of cookies) {
+        const [key, value] = cookie.split('=');
+        if (key === name) return value;
+      }
+      return null;
+    }
+
+    
+    function highlightStars(rating) {
+      stars.forEach((star, index) => {
+        if (index < rating) {
+          star.classList.add('selected');
+        } else {
+          star.classList.remove('selected');
+        }
+      });
+      ratingText.textContent = rating;
+    }
+
+    
+    stars.forEach(star => {
+      star.addEventListener('click', () => {
+        const rating = parseInt(star.getAttribute('data-value'));
+        highlightStars(rating);
+        setCookie(cookieName, rating, 30); 
+      });
+    });
+
+    
+    const savedRating = getCookie(cookieName);
+    if (savedRating) {
+      highlightStars(parseInt(savedRating));
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+    <body style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #032233; margin: 0;">
+        <div style="background-color: #1c3e50; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px #1c3e50;">
+    <h3 style ="text-align: center"> დარეგისტრირდი აქ </h3>
+
+    <form id="registrationForm">
+        <fieldset>
+          
+          ელ.ფოსტა: <input type="text" id="email" size="30" placeholder="forexample@.com"><br><br>
+          პაროლი: <input type="password" id="password" placeholder="password"> <br><br>
+          <p id="password-strength" class="error"></p>
+          დაადასტურეთ პაროლი: <input type="password" id="confirmPassword" placeholder="confirm password"> <br><br>
+          მომხმარებლის სახელი: <input type="text" id="username" size="10"> <br><br>
+          ქვეყანა: <input type="text" id="country" size="10"> <br><br>
+          ქალაქი: <input type="text" id="city" size="10"> <br><br>
+          მობილურის ნომერი: <input type="text" id="phone" size="30" placeholder="+995"><br><br>
+          <button type="submit">Register</button>
+          <p id="error-at" class="error"></p>
+          <p id="error-dot" class="error"></p>
+          <p id="error-length" class="error"></p>
+        </fieldset>
+      </form>
+      
+      <script>
+        document.getElementById('registrationForm').addEventListener('submit', function (event) {
+          event.preventDefault(); 
+      
+          const email = document.getElementById('email').value;
+          const errorAt = document.getElementById('error-at');
+          const errorDot = document.getElementById('error-dot');
+          const errorLength = document.getElementById('error-length');
+      
+          
+          errorAt.textContent = '';
+          errorDot.textContent = '';
+          errorLength.textContent = '';
+      
+          let isValid = true;
+      
+          
+          if (!email.includes('@')) {
+            errorAt.textContent = 'Error: იმეილი უნდა შეიცავდეს @ სიმბოლოს.';
+            isValid = false;
+          }
+      
+          if (!email.includes('.')) {
+            errorDot.textContent = 'Error: იმეილი უნდა შეიცავდეს . სიმბოლოს.';
+            isValid = false;
+          } else {
+            const dotIndex = email.lastIndexOf('.');
+            if (email.length - dotIndex - 1 < 2) {
+              errorLength.textContent = 'Error: იმეილი უნდა შეიცავდეს 2 სიმბოლოს "." შემდეგ.';
+              isValid = false;
+            }
+          }
+      
+          
+          if (isValid) {
+            alert('წარმატებულად დარეგისტრირდი!');
+            
+          }
+        });
+      </script>
+    </body>
+    </html>
+    <script>
+    document.getElementById('registrationForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const password = document.getElementById('password').value;
+    const passwordStrengthMessage = document.getElementById('password-strength');
+
+    
+    passwordStrengthMessage.textContent = '';
+
+    
+    let strength = '';
+
+    const hasLetters = /[a-zA-Z]/.test(password);  
+    const hasNumbers = /\d/.test(password);
+    const hasUpperCase = /[A-Z]/.test(password);
+
+    
+    if (hasLetters && !hasNumbers && !hasUpperCase) {
+        strength = 'Weak';  
+    } else if (hasLetters && hasNumbers && !hasUpperCase) {
+        strength = 'Medium Strong'; 
+    } else if (hasLetters && hasNumbers && hasUpperCase) {
+        strength = 'Strong';  
+    } else {
+        strength = 'Invalid';  
+    }
+
+   
+    passwordStrengthMessage.textContent = `Password Strength: ${strength}`;
+})
+    </script>
+
+
+</body>
+</html>
